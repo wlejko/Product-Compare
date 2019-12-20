@@ -1,0 +1,19 @@
+.container {
+  border: 1px solid #66fcf1;
+  width: 160px;
+  height: 240px;
+  border-radius: 12px;
+  background-color: #0b0c10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #66fcf1;
+  transition: all 1s ease;
+  margin: 20px;
+}
+
+.container:hover {
+  background-color: #1f2833;
+  cursor: pointer;
+  color: #45a29e;
+}
