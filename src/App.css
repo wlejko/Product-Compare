@@ -25,6 +25,7 @@
 
 .listContainer {
   display: flex;
+  overflow-x: auto;
 }
 
 .containerView {
@@ -55,6 +56,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: opc 2s;
 }
 
 .compareName {
@@ -69,7 +71,7 @@
   border-top: 1px solid #66fcf1;
   border-bottom: 1px solid #66fcf1;
   font-size: 24px;
-  width: 80%;
+  width: 40%;
 }
 
 .deleteButtonStyle {
@@ -79,7 +81,7 @@
   background-color: #0b0c10;
   border: 2px solid #66fcf1;
   font-size: 20px;
-  transition: all 1s ease;
+
   color: #66fcf1;
 }
 
@@ -87,4 +89,59 @@
   background-color: #1f2833;
   cursor: pointer;
   color: #45a29e;
+}
+
+.imageStyle {
+  max-width: 140px;
+  height: 140px;
+}
+
+.listContainer::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1d;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: #4cc5bd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5af3e9;
+}
+
+@keyframes opc {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 980px) {
+  .listContainer {
+    display: flex;
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 360px) {
+  .containerView {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+  }
+  .divider {
+    width: 80%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #c5c6c7;
+    opacity: 0.1;
+  }
 }

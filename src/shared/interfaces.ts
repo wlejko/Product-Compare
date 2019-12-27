@@ -3,5 +3,6 @@ export interface OneItemProps {
   price: number;
   weight: number;
   condition: string;
+  image: string;
   itemName?: string;
 }

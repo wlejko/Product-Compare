@@ -5,7 +5,7 @@ import "../../styles/card.css";
 
 export default function OneItem(props: OneItemProps) {
   const itemConcumer = useContext(context);
-  const { name, price, weight, condition } = props;
+  const { name, price, weight, image, condition } = props;
 
   function updateName(
     name: string,
@@ -22,7 +22,7 @@ export default function OneItem(props: OneItemProps) {
       className="container"
       onClick={() => updateName(name, price, weight, condition, true)}
     >
-      <p>{name}</p>
+      <img src={image} className="imageStyle" alt={name}></img>
     </div>
   );
 }
