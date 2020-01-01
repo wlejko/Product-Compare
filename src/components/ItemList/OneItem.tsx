@@ -7,6 +7,7 @@ export default function OneItem(props: OneItemProps) {
   const itemConcumer = useContext(context);
   const { name, price, weight, image, condition } = props;
 
+  //function to update state in context
   function updateName(
     name: string,
     price: number,

@@ -6,6 +6,7 @@ export interface RowProps {
   rowValue: number | string;
 }
 
+//single row in compare box
 export default function OneRow(props: RowProps) {
   return (
     <div className="compareBoxe">

@@ -6,6 +6,8 @@ import "../../App.css";
 export default function CompareView() {
   const itemConcumer = useContext(context);
 
+  //rendering objects if compare is true
+
   return (
     <div className="containerView">
       <div className="oneCompareSide">

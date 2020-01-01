@@ -15,6 +15,7 @@ export default function CompareItem(props: OneItemProps) {
   const { name, price, weight, condition, id } = props;
   const itemConcumer = useContext(context);
 
+  //function to delete object from compare view
   function deleteObject(id: number) {
     if (id === 1) {
       itemConcumer?.setFirstObject({
